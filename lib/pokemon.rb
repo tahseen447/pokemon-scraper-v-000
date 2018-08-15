@@ -17,5 +17,4 @@ class Pokemon
     ins = db.prepare('select * from pokemon where id= \'#{id}\'')
     string.each { |s| ins.execute(s) }
   end
-
 end
