@@ -12,7 +12,7 @@ class Pokemon
 
   end
 
-  def self.find
+  def self.find(id)
   end
 
 end
