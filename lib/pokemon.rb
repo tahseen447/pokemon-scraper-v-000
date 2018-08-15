@@ -14,7 +14,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-    ins = db.prepare("select * from #{db} where id= '#{id}'")
+    ins = db.prepare('select * from #{db} where id= \'#{id}\'')
     string.each { |s| ins.execute(s) }
   end
 
