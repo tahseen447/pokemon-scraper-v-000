@@ -1,4 +1,5 @@
 class Pokemon
-  def initialize
+  attr_accessor :id, :name:, :type, :db)
+  def initialize()
   end
 end
