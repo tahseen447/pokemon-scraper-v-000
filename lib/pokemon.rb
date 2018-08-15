@@ -9,7 +9,7 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    statement = @db.prepare("insert into #{@db}(name, type) values ('#{name}', '#{type}')")
+    ins = @db.prepare("insert into #{@db}(name, type) values ('#{name}', '#{type}')")
     string.each { |s| ins.execute(s) }
   end
 
