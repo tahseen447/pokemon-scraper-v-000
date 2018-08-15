@@ -10,11 +10,11 @@ class Pokemon
 
   def self.save(name, type, db)
     ins = db.prepare('insert into pokemon (name, type) values (\'#{name}\', \'#{type}\')')
-    string.each { |s| ins.execute(s) }
+    String.each { |s| ins.execute(s) }
   end
 
   def self.find(id, db)
     ins = db.prepare('select * from pokemon where id= \'#{id}\'')
-    string.each { |s| ins.execute(s) }
+    String.each { |s| ins.execute(s) }
   end
 end
