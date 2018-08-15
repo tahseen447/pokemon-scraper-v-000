@@ -9,8 +9,8 @@ class Pokemon
   end
 
   def save(name, type, db)
-    
+
   end
 
-  def find()
+  def find(id, db)
 end
