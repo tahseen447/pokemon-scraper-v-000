@@ -18,6 +18,8 @@ class Pokemon
     #ins = db.prepare('select * from pokemon where id= \'#{id}\'')
     #String.each { |s| ins.execute(s) }
     array=db.execute('select * from pokemon where id=?', id)
+    puts array.inspect
     Pokemon.new(id:array[0], name:array[1], type:array[2],db: db)
   end
+
 end
