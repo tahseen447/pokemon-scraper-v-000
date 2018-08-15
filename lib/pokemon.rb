@@ -17,6 +17,6 @@ class Pokemon
   def self.find(id, db)
     #ins = db.prepare('select * from pokemon where id= \'#{id}\'')
     #String.each { |s| ins.execute(s) }
-    array=db.execute('select * from pokemon where id= (?)', [id])
+    array=db.execute('select * from pokemon where id=?', id)
   end
 end
