@@ -10,7 +10,7 @@ class Pokemon
 
   def self.save(name, type, db)
     statement = @db.prepare("insert into #{@db}(name, type) values ('#{name}', '#{type}')")
-    @db.execute(statement);
+    string.each { |s| ins.execute(s) }
   end
 
   def self.find(id, db)
